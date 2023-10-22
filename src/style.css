@@ -1,0 +1,95 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    display: grid;
+    place-items: center;
+    background-image: url(images/arte-papel-luna-nubes.jpg);
+}
+h1{
+    text-align: center;
+}
+#taskForm{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+}
+#emojiList{
+    margin-bottom: 1rem;
+}
+#emojiContainer{
+    display: flex;
+    gap: 0.5rem;
+}
+#taskForm #newTask{
+    padding: 0.7rem 0.3rem ;
+    width: 75%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    color: black;
+    box-shadow: 3px 3px 12px 2px #ccc;
+}
+#taskForm  button{
+    padding: 0.5rem 1rem;
+    background: rgb(77, 77, 222);
+    border: 2px solid rgb(77, 77, 242);
+    border-radius: 7px;
+    font-weight: 600;
+    color: #fff;
+}
+#taskList{
+    width: 90%;
+    padding: 1rem;
+}
+#taskList li{
+    font-weight: 600;
+    min-height: 50px;
+    list-style: none;
+    margin-bottom: 1.2rem;
+    box-shadow: 3px 3px 12px 2px #ccc;
+    padding:0.5rem  1rem;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 5fr 40px 40px;
+    place-content: center;
+}
+#taskList li:nth-child(even){
+    background: #b9f361;
+}
+#taskList li:nth-child(odd){
+    background: #c2c0c0;
+}
+#taskList button{
+    padding: 0.3rem 0;
+    margin: 0 0.3rem;
+    background:  rgb(77, 77, 222);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+
+#emojiList {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    display: block;
+}
+
+#emojiList button {
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: rgb(77, 77, 242);
+    border: none;
+    border-radius: 2px;
+}
+
+  button#showEmojis {
+    margin-top: 10px;
+    cursor: pointer;
+  }
